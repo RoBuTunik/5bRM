@@ -1,14 +1,16 @@
-<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-<div id="flash-container" style="width: 1440px; height: 810px;"></div>
-
-<script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("flash-container");
-        container.appendChild(player);
-        
-        player.load("https://robutunik.github.io/5bRM/5bRM.swf"); 
-    });
-</script>
+<body>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <div id="flash-container" style="width: 1440px; height: 810px;"></div>
+    
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("flash-container");
+            container.appendChild(player);
+            
+            player.load("https://robutunik.github.io/5bRM/5bRM.swf"); 
+        });
+    </script>
+</body>
